@@ -4,13 +4,11 @@
 
  html {
     box-sizing: border-box;
-    font-family: Rubik;
  }
 
  body {
     line-height: 1.5em;
     display:block;
-    background-color: #000;
  }
 
 ::selection {
@@ -18,19 +16,35 @@
 }
 
 :root {
-    --p-text: #212b36;
     --purple:#8e7bff;
-    
+    --vacchio-purple: #7C55DF;
+    --vacchio-green: linear-gradient(0deg, #59D499 0%, #59D499 100%);
 }
 
-.max-mar {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
+
+
+/* ------------------- HEADER -------------------- */
+
+
 
 /* ------------------ SKIP LINKS ------------------ */
+
+
+
+/* ------------------ SECTION ------------------- */
+
+section h2 span:first-child {
+    color: transparent;
+    background: var(--vacchio-green);
+    background-clip: text;
+}
+
+section h2 span:last-child {
+    background: var(--vacchio-purple);
+    border-radius: 3px;
+    padding: .1em .3em;
+}
+
+
+
