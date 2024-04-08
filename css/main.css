@@ -9,6 +9,7 @@
  body {
     line-height: 1.5em;
     display:block;
+    overflow: hidden;
  }
 
 ::selection {
@@ -20,19 +21,37 @@
     --vacchio-purple: #7C55DF;
     --vacchio-green: linear-gradient(0deg, #59D499 0%, #59D499 100%);
 }
+.ss-shape {
+    position: absolute; 
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+
+}
+
+/* ----------------- MOBILE NAV ------------------- */
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url("/final/images/svg/nav.svg");
+}
 
 
 
+/* -------------------- HEADER -------------------- */
 
-/* ------------------- HEADER -------------------- */
-
-
-
-/* ------------------ SKIP LINKS ------------------ */
 
 
 
 /* ------------------ SECTION ------------------- */
+
+section {
+    padding:3em 1em;
+}
 
 section h2 span:first-child {
     color: transparent;
@@ -43,8 +62,29 @@ section h2 span:first-child {
 section h2 span:last-child {
     background: var(--vacchio-purple);
     border-radius: 3px;
-    padding: .1em .3em;
+    padding: .01rem .4rem;
 }
 
+section h2 {
+    padding: .4em 0;
+}
+
+section .ss-title {
+    color: #FFF;
+    font-family: "Helvetica Neue";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+section .ss-sub {
+    color: #D7D7D7;
+    font-family: "Helvetica Neue";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 
