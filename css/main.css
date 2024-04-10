@@ -21,7 +21,8 @@ body {
     --purple:#8e7bff;
     --vacchio-purple: #7C55DF;
     --vacchio-green: linear-gradient(0deg, #59D499 0%, #59D499 100%);
-    --Glass-Stroke: border: 0.9px solid rgba(255, 255, 255, 0.08);
+    --home: #E64149;
+
 }
 
 
@@ -37,13 +38,12 @@ body {
 }
 
 .nav-container {
-    min-width: 432.864px;
-    border-radius: 17px;
+    border-radius: 20px;
     border: 0.9px solid rgba(255, 255, 255, 0.08);
     background: rgba(41, 41, 41, 0.80);
     backdrop-filter: blur(5.150000095367432px);
-    padding: .7em .7em 1em .7em;
-    margin-bottom: 2em;
+    padding: .6em;
+    margin-bottom: 1em;
 }
 
 .desktop ul {
@@ -51,7 +51,7 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    gap: .5em;
+    gap: .7em;
 }
 
 .desktop ul li a{
@@ -63,29 +63,90 @@ body {
 
 .desktop ul > * {
     flex-basis: 1;
-    min-width: 4rem;
-    height: 4rem;
+    min-width: 3rem;
+    height: 3rem;
     justify-content: center;
     display: flex;
-    border-radius: 12px;
+    border-radius: 11px;
     border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.desktop ul li:not(.active):hover,
+.desktop ul li:not(.active):focus{
+    background-color: #3c3c3c97;
     cursor: pointer;
-    /* backdrop-filter: blur(5.150000095367432px); */
+    transition: all 100ms ease-in;
+}
+
+.active-home {
+    background-color: var(--home);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.active-home:hover,
+.active-home:focus{
+    background-color: #da353d;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+.active-home-tool {
+    position: relative;
 }
 
 .nav-doc-button {
     font-size: 0;
+    width:100%;
 }
 
 .nav-doc-button img{
-    width: 2rem;
+    width: 1.8rem;
+}
+
+.nav-doc-button[data-tool-tip] {
+    position: relative;
+}
+
+.nav-doc-button[data-tool-tip]::before {
+    content: attr(data-tool-tip);
+    position: absolute;
+    background-color: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.066);
+    border-radius: .35rem;
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    bottom: 65px; 
+    white-space: nowrap;
+    font-size: .9rem; 
+    line-height: 1;
+    opacity: 0;
+    transition: opacity 150ms ease;
+}
+
+.nav-doc-button[data-tool-tip]:hover::before {
+    opacity: 1;
+}
+
+.nav-container .active::after {
+    content: '';
+    width: 1rem;
+    height: 3px;
+    border-radius: 100px;
+    background-color: #4A4A4A;
+    display: block;
+    position: absolute;
+    bottom: 3px;
+}
+
+.linkedin img{
+    width: 1.3rem;
 }
 
 #nav-border {
     flex-basis: 0;
     min-width: 3px;
-    height: 3.3rem;
-    background-color: #4A4A4A;;;
+    height: 2rem;
+    background-color: #4A4A4A;
     justify-content: center;
     display: flex;
     border-radius: none;
@@ -119,7 +180,8 @@ body {
 }
 
 .home-hero {
-    margin-top: 13em;
+    position: absolute;
+    top: 17%;
     padding: 1.5em;
 }
 
