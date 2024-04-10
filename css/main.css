@@ -10,6 +10,11 @@ html {
 body {
     line-height: 1.5em;
     display:block;
+    overflow-x: hidden;
+    background-color: #0D0D0D;
+}
+
+.home-body {
     overflow: hidden;
 }
 
@@ -21,8 +26,21 @@ body {
     --purple:#8e7bff;
     --vacchio-purple: #7C55DF;
     --vacchio-green: linear-gradient(0deg, #59D499 0%, #59D499 100%);
-    --home: #E64149;
+    --vacchio-red: #E64149;
+    --vacchio-border: border: 1px solid rgba(255, 255, 255, 0.066);
+}
 
+::-webkit-scrollbar {
+    display: none; 
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    background-color: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; 
 }
 
 
@@ -32,7 +50,6 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
@@ -79,13 +96,25 @@ body {
 }
 
 .active-home {
-    background-color: var(--home);
+    background-color: var(--vacchio-red);
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .active-home:hover,
 .active-home:focus{
     background-color: #da353d;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+}
+
+.active-projects {
+    background-color: var(--vacchio-purple);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.active-projects:hover,
+.active-projects:focus{
+    background-color: #6e3fe5;
     cursor: pointer;
     transition: all 100ms ease-in;
 }
@@ -159,14 +188,17 @@ body {
 
 /* -------------------- HEADER -------------------- */
 
-.title {
-    color: #FFF;
-    font-family: "Helvetica Neue";
-    font-size: 1.5em;
-    font-style: normal;
+.carmen-vacchio {
+    width: 100%;
+}
+
+.carmen-vacchio p {
     font-weight: 700;
-    line-height: normal;
-    padding: 2em;
+    font-size: 1.5rem;
+    color: white;
+    position: fixed;
+    top: 3rem;
+    left: 3rem;
 }
 
 
@@ -181,7 +213,7 @@ body {
 
 .home-hero {
     position: absolute;
-    top: 17%;
+    top: 30%;
     padding: 1.5em;
 }
 
@@ -224,6 +256,68 @@ body {
     white-space: nowrap;
 }
 
+/* ------------------ PROJECTS ------------------- */
+
+.project-container {
+    margin-top: 2rem;
+}
+
+.projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.project-cards {
+    width: calc(50% - 2rem);
+    max-width: 35rem; 
+    aspect-ratio: 35 / 41; 
+    background-color: #131313;
+    border-radius: 2rem;
+    border: 1px solid #262626;
+    overflow: hidden;
+    text-decoration: none;
+    transition: height 0.3s ease;
+}
+
+.project-card {
+    padding: 2rem;
+}
+
+.p-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.p-heading {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.tags {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tags p {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #1E1E1E;
+    border-radius: 0.5rem;
+}
+
+.copyright {
+    padding: 2em 0 8em 0;
+    color: #8F8F8F;
+    font-size: .9rem;
+    text-align: center;
+}
 
 /**************************************************** 
                     Desktop Styles
@@ -323,7 +417,7 @@ body {
         display: none;
     }
 
-    .title{
+    .carmen-vacchio{
         display: none;
     }
 
@@ -380,16 +474,15 @@ body {
 
     .shape img {
         width: 100%; 
+        overflow: hidden;
     }
 
     .shape {
-        position: absolute;
-        bottom: 0px;
-        right: -550px; 
-        width: 200%;
-        overflow: hidden; 
+        overflow-y: hidden;
         z-index: -1;
-    } 
+        position: fixed;
+        bottom: 0px
+    }  
 
     .home-hero {
         padding: 1em;
@@ -436,3 +529,23 @@ body {
         font-size: 4em;
     }
  }
+
+ @media screen and (max-height: 900px) {
+    .home-hero h2 {
+        font-size: 3rem;
+    }
+
+    .home-hero h3 {
+        font-size: 2rem;
+    }
+ } 
+
+ @media screen and (max-width: 500px) {
+    .home-hero h2 {
+        font-size: 3rem;
+    }
+
+    .home-hero h3 {
+        font-size: 2rem;
+    }
+ } 
