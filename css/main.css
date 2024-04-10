@@ -274,14 +274,33 @@ body {
 .project-cards {
     width: calc(50% - 2rem);
     max-width: 35rem; 
-    aspect-ratio: 35 / 41; 
     background-color: #131313;
     border-radius: 2rem;
     border: 1px solid #262626;
     overflow: hidden;
     text-decoration: none;
-    transition: height 0.3s ease;
+    transition: transform 150ms ease;
 }
+
+.project-cards:hover,
+.project-cards:focus {
+    transform: scale(1.005);
+    cursor: pointer;
+    background-color: #191919;
+    border: 1px solid #3b3b3b;
+}
+
+.project-cards:hover .tags p,
+.project-cards:focus .tags p {
+    background-color: #2e2e2e;
+    color: var(--purple);
+}
+
+.project-cards:hover h1,
+.project-cards:focus h1 {
+    color: #ffffff;
+}
+
 
 .project-card {
     padding: 2rem;
@@ -292,24 +311,36 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 10px;
 }
+
+.p-heading h1{
+    color: #CCC;
+}
+
+.p-heading p{
+    color: #8F8F8F;
+}
+
 
 .p-heading {
     margin-top: 1rem;
-    text-align: center;
+    text-align: left;
 }
 
 .tags {
-    margin-top: 2rem;
-    text-align: center;
+    margin-top: 1rem;
+    text-align: left;
 }
 
 .tags p {
     display: inline-block;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: .25rem .5rem;
     background-color: #1E1E1E;
-    border-radius: 0.5rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color: #8F8F8F;
 }
 
 .copyright {
