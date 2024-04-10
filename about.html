@@ -107,7 +107,7 @@
           <div class="about-left">
 
               <!-- Card #1 -->
-              <a href="#" class="about-cards left-cards">
+              <div class="about-cards left-cards">
                   <div class="about-card">
                       <div class="p-img"><img src="/images/about/carmen-vacchio.jpeg"
                               alt="japanese restaurant ordering app"></div>
@@ -117,55 +117,59 @@
                       </div>
                       <div class="tags a-tags">
                           <p><img src="/images/svg/location.svg" alt="location icon"><span>Ottawa, Ontario</span></p>
-                          <p><img src="/images/svg/school.svg" alt="location icon"><span>Algonquin College</span></p>
+                          <p><img src="/images/svg/school.svg" alt="school icon"><span>Algonquin College</span></p>
                       </div>
                   </div>
-              </a>
+              </div>
 
           </div>
 
           <!-- Right Side -->
           <div class="about-right">
 
-              <!-- Card #2 -->
-              <a href="#" class="about-cards">
+              <!-- Card #1 -->
+              <div class="about-cards">
                   <div class="about-card">
-                      <div class="p-img"><img src="/images/projects/casebase/casebase-thumbnail.jpg"
-                              alt="showcasing a phone case website on a laptop screen"></div>
                       <div class="p-heading a-heading">
-                          <h1>Phone Case Commerce Site</h1>
-                          <p>Casebase is a smartphone case and skin store that offers affordable pricing options with
-                              unique designs.</p>
+                          <h1>About Me</h1>
+                          <p>I'm a UX designer passionate about helping organizations transform user problems into seamless experiences at scale.</p>
+                          <p>With extensive practical work experience, I have honed concrete communication skills, a strong work ethic, and a can-do attitude. I'm empathetic, a team player, user-focused, and result driven.</p>
+                          <p>I've previously worked on commerce systems, brand identity, web applications, and design systems. I enjoy leaning into projects that necessitate a high degree of vision, problem-solving, and visual polish.</p>
                       </div>
-                      <div class="tags">
-                          <p>Responsive Web Design</p>
-                          <p>School Project 2023</p>
+                      <div class="tags a-tags email-carmen">
+                        <p><img src="/images/svg/email.svg" alt="email icon"><span>carmen@zolas.ca</span></p>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- Card #2 -->
+              <div class="about-cards">
+                  <div class="about-card">
+                      <div class="p-heading a-heading education">
+                          <h1>Education</h1>
+                          <h2>Algonquin College</h2>
+                          <h3>Interactive Media Design (co-op)<span>2023 to 2025</span></h3>
+                      </div>
+                      <div class="card-divider"></div>
+                      <div class="p-heading a-heading education">
+                          <h2>Algonquin College</h2>
+                          <h3>Mobile and Web User Experience Design<span>2022 to 2023</span></h3>
+                          <div class="card-divider"></div>
+                          <div class="p-heading a-heading education">
+                              <h2>Algonquin College</h2>
+                              <h3>Business Management & Entrepreneurship<span>2014 to 2016</span></h3>
+                          </div>
+                          <div class="tags e-tags">
+                              <a href="https://www.algonquincollege.com/"><span>algonquincollege.com</span><img
+                                      src="/images/svg/right-arrow.svg" alt="external link arrow"></a>
+                          </div>
                       </div>
                   </div>
-              </a>
+              </div>
 
               <!-- Card #3 -->
-              <a href="#" class="about-cards">
+              <div class="about-cards">
                   <div class="about-card">
-                      <div class="p-img"><img src="/images/projects/ops/ops-thumbnail.jpg" alt="OPS website redesign">
-                      </div>
-                      <div class="p-heading a-heading">
-                          <h1>Designing for Social Good</h1>
-                          <p>This project was completed further to the Google UX Design Certificate provided through
-                              Coursera.</p>
-                      </div>
-                      <div class="tags">
-                          <p>UX Design</p>
-                          <p>School Project 2023</p>
-                      </div>
-                  </div>
-              </a>
-
-              <!-- Card #4 -->
-              <a href="#" class="about-cards">
-                  <div class="about-card">
-                      <div class="p-img"><img src="/images/projects/arcanum-thumbnail/arcanum-thumbnail.jpeg" alt="">
-                      </div>
                       <div class="p-heading a-heading">
                           <h1>Web Application Mockup</h1>
                           <p>A web application for the fantasy RPG, Guild Saga's upcoming item marketplace.</p>
@@ -175,7 +179,7 @@
                           <p>Commercial Work</p>
                       </div>
                   </div>
-              </a>
+              </div>
 
           </div>
 
@@ -185,8 +189,34 @@
         
       
       <!-- Copyright -->
-      <!-- <div class="copyright"> &copy 2024 Carmen James Caruso Vacchio • @carmenvacchio </div> -->
+      <!-- <div class="copyright"> &copy 2024 Carmen James Caruso Vacchio • @carmen@zolas.ca </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+   
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var emailCarmen = document.querySelector('.email-carmen p');
+        
+        emailCarmen.addEventListener('click', function() {
+            var emailText = emailCarmen.querySelector('span').innerText;
+            
+            // Create a temporary textarea element to hold the email text
+            var tempTextArea = document.createElement('textarea');
+            tempTextArea.value = emailText;
+            document.body.appendChild(tempTextArea);
+            
+            // Select and copy the email text
+            tempTextArea.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary textarea element
+            document.body.removeChild(tempTextArea);
+            
+            // Alert or indicate to the user that the text has been copied
+            alert("Email address copied to clipboard: " + emailText);
+        });
+    });
+    </script>
 </body>
 </html>
