@@ -52,11 +52,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 100;
 }
 
 .nav-container {
     border-radius: 20px;
-    border: 0.9px solid rgba(255, 255, 255, 0.08);
+    border: 0.9px solid rgba(255, 255, 255, 0.2);
     background: rgba(41, 41, 41, 0.80);
     backdrop-filter: blur(5.150000095367432px);
     padding: .6em;
@@ -184,23 +185,167 @@ body {
     margin: 0 .6em;
 }
 
+/* --------------------- BLUR --------------------- */
+
+.blur-container {
+    bottom: 0px;
+    flex: 0 0 auto;
+    height: 100px;
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    z-index: 10;
+}
+
+.nav-bg-blur {
+    display: block;
+    flex: 0 0 auto;
+    pointer-events: none;
+    position: relative;
+    border-radius: 0px;
+    overflow: visible;
+    height: 100%;
+    width: 100%;
+    transform: none;
+}
+
+.nav-bg-blur-1 {
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(0px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%);
+    z-index: 11;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-2 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(0.246914px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 30%);
+    z-index: 12;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-3 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(0.987654px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 20%, rgb(0, 0, 0) 40%);
+    z-index: 13;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-4 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2.22222px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 30%, rgb(0, 0, 0) 50%);
+    z-index: 14;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-5 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3.95062px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 40%, rgb(0, 0, 0) 60%);
+    z-index: 15;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-6 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(12.0988px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(0, 0, 0) 90%);
+    z-index: 16;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-7 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8.88889px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 60%, rgb(0, 0, 0) 80%);
+    z-index: 17;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-8 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(15.8025px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 80%, rgb(0, 0, 0) 100%);
+    z-index: 18;
+    border-radius: 0px;
+}
+
+.nav-bg-blur-9 {
+    position: fixed;
+    bottom: 0;
+    height: 6rem;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0) 100%);
+    z-index: 19;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bg-blur-10 {
+    position: absolute;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0) 90%, rgb(0, 0, 0) 100%);
+    z-index: 20;
+    border-radius: 0px;
+} 
 
 
 /* -------------------- HEADER -------------------- */
 
 .carmen-vacchio {
     width: 100%;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 500000;
 }
 
-.carmen-vacchio p {
+.carmen-vacchio a {
+    text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
     color: white;
-    position: fixed;
-    top: 3rem;
-    left: 3rem;
+    padding: 3rem;
 }
 
+@media screen and (max-width: 1660px) {
+    .carmen-page {
+        display: none;
+    }
+}
 
 /* ------------------ SECTION ------------------- */
 
@@ -260,6 +405,7 @@ body {
 
 .project-container {
     margin-top: 2rem;
+    padding: 0 1em;
 }
 
 .projects-section {
@@ -272,8 +418,8 @@ body {
 }
 
 .project-cards {
-    width: calc(50% - 2rem);
-    max-width: 35rem; 
+    width: calc(50% - 2rem); /* default width for larger screens */
+    max-width: 35rem;
     background-color: #131313;
     border-radius: 2rem;
     border: 1px solid #262626;
@@ -301,6 +447,10 @@ body {
     color: #ffffff;
 }
 
+.project-cards:hover .p-heading p,
+.project-cards:focus .p-heading p {
+    color: #dedede;
+}
 
 .project-card {
     padding: 2rem;
@@ -321,7 +471,6 @@ body {
 .p-heading p{
     color: #8F8F8F;
 }
-
 
 .p-heading {
     margin-top: 1rem;
@@ -350,6 +499,19 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 870px) {
+    .project-cards {
+        width: calc(100% - 2rem);
+    }
+}
+
+@media screen and (max-width: 870px) and (max-height:700px) {
+    .copyright {
+       font-size: 0;
+       padding-bottom: 0rem;
+    }
+
+}
 /**************************************************** 
                     Desktop Styles
  *****************************************************/
@@ -401,7 +563,7 @@ body {
     }
 } 
 
-@media screen and (min-width: 641px) and (max-width: 1400px) {
+@media screen and (min-width: 641px) and (max-width: 1750px) {
 
     .home-section h2 {
         color: #FFF;
