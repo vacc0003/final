@@ -37,6 +37,7 @@
 </head>
 <body class="bg-black antialiased">
 
+  <!-- Mobile Nav -->
   <p class="title">Carmen Vacchio</p>
   <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
@@ -60,7 +61,7 @@
     <div class="ss-container">
         <section class="home-section">
             <div class="home-hero">
-                <h2>Hi, I'm <span>Carmen</span> – a <span>UX Designer</span></h2>
+                <h2>Hi, I'm <span>Carmen</span> – a <span class="no-break">UX Designer</span></h2>
                 <h3>passionate about helping organizations transform user problems into seamless experiences at scale.</h3>
             </div>
         </section>
@@ -68,6 +69,21 @@
         <div class="shape">
             <img src="./images/home-shape/home-shape.png" alt="large 3d shape">
         </div>
+
+        <!-- Desktop Nav -->
+        <nav class="desktop">
+          <div class="nav-container">
+            <ul>
+              <li><a class="nav-doc-button" href="#"><img src="/images/svg/mobile/home-d.svg" alt="home page">Home</a></li>
+              <li><a class="nav-doc-button" href="#"><img src="/images/svg/mobile/projects-d.svg" alt="home page">Projects</a></li>
+              <li><a class="nav-doc-button" href="#"><img src="/images/svg/mobile/graphics-d.svg" alt="home page">Graphics</a></li>
+              <li><a class="nav-doc-button" href="#"><img src="/images/svg/mobile/photos-d.svg" alt="home page">Photos</a></li>
+              <li id="nav-border"></li>
+              <li><a class="nav-doc-button" href="#"><img src="/images/svg/mobile/about-d.svg" alt="home page">About</a></li>
+              <li><a class="nav-doc-button" href="#"><img src="/images/svg/mobile/linkedin-d.svg" alt="home page">LinkedIn</a></li>
+            </ul>
+          </div>
+       </nav>
     </div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
