@@ -45,6 +45,42 @@ body {
 }
 
 
+/* -------------- TYPOGRAPHY --------------- */
+
+.p-heading h1{
+    color: #CCC;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.a-heading h1{
+    color: #dcdcdc;
+}
+
+.p-heading p{
+    color: #8F8F8F;
+}
+
+.p-heading {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.tags {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.tags p {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: .25rem .5rem;
+    background-color: #1E1E1E;
+    border-radius: .5rem;
+    font-size: .8rem;
+    color: #8F8F8F;
+}
+
 /* ----------------- NAV ------------------- */
 
 .desktop {
@@ -478,34 +514,6 @@ body {
     border-radius: 10px;
 }
 
-.p-heading h1{
-    color: #CCC;
-}
-
-.p-heading p{
-    color: #8F8F8F;
-}
-
-.p-heading {
-    margin-top: 1rem;
-    text-align: left;
-}
-
-.tags {
-    margin-top: 1rem;
-    text-align: left;
-}
-
-.tags p {
-    display: inline-block;
-    margin: 0.5rem 0.5rem 0.5rem 0;
-    padding: .25rem .5rem;
-    background-color: #1E1E1E;
-    border-radius: .5rem;
-    font-size: .8rem;
-    color: #8F8F8F;
-}
-
 .copyright {
     padding: 2em 0 8em 0;
     color: #8F8F8F;
@@ -550,6 +558,10 @@ body {
     max-width: 35rem;
 }
 
+.about-right {
+    margin-bottom: 5rem;
+}
+
 .left-cards {
     position: sticky;
     top: 2rem;
@@ -567,30 +579,6 @@ body {
     margin-bottom: 2rem;
 }
 
-.about-cards:hover,
-.about-cards:focus {
-    transform: scale(1.005);
-    cursor: pointer;
-    background-color: #191919;
-    border: 1px solid #3b3b3b;
-}
-
-.about-cards:hover .tags p,
-.about-cards:focus .tags p {
-    background-color: #2e2e2e;
-    color: var(--purple);
-}
-
-.about-cards:hover h1,
-.about-cards:focus h1 {
-    color: #ffffff;
-}
-
-.about-cards:hover .p-heading p,
-.about-cards:focus .p-heading p {
-    color: #dedede;
-}
-
 .about-card {
     padding: 2rem;
 }
@@ -603,40 +591,25 @@ body {
     border-radius: 10px;
 }
 
-.p-heading h1{
-    color: #CCC;
-}
-
-.p-heading p{
-    color: #8F8F8F;
-}
-
-.p-heading {
-    margin-top: 1rem;
-    text-align: left;
-}
-
-.tags {
-    margin-top: 1rem;
-    text-align: left;
-}
-
-.tags p {
-    display: inline-block;
-    margin: 0.5rem 0.5rem 0.5rem 0;
-    padding: .25rem .5rem;
-    background-color: #1E1E1E;
-    border-radius: .5rem;
-    font-size: .8rem;
-    color: #8F8F8F;
-}
-
 .copyright {
     padding: 2em 0 8em 0;
     color: #8F8F8F;
     font-size: .9rem;
     text-align: center;
 }
+
+.a-tags img {
+    width: .8rem;
+    height: .8rem;
+
+    padding-bottom: .1rem;
+}
+
+.a-tags span {
+    padding-left: .5rem;
+}
+
+
 
 
 @media screen and (max-width: 870px) {
@@ -652,6 +625,7 @@ body {
     }
 
 }
+
 
 
 /**************************************************** 
