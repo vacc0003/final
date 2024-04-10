@@ -267,6 +267,37 @@ body {
     opacity: 1;
 }
 
+.linkedin[data-tool-tip]::before,
+.photos[data-tool-tip]::before,
+.graphics[data-tool-tip]::before {
+    content: "LinkedIn";
+    background-image: url("/images/svg/right-arrow-link.svg");
+    background-size: 1rem 1rem; 
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    background-color: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.066);
+    border-radius: .35rem;
+    color: white;
+    padding: 0.3125rem 0.625rem;
+    padding-right: 1.5em;
+    bottom: 65px; 
+    white-space: nowrap;
+    font-size: .9rem; 
+    line-height: 1;
+    opacity: 0;
+    transition: opacity 150ms ease;
+}
+
+.photos[data-tool-tip]::before {
+    content: "Photos";
+}
+
+.graphics[data-tool-tip]::before {
+    content: "Graphics";
+}
+
 .nav-container .active::after {
     content: '';
     width: 1rem;
