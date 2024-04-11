@@ -773,7 +773,7 @@ body {
 }
 
 #project-overview span {
-    color: #757575;
+    color: rgb(170, 170, 170);
     font-size: 1rem;
     font-weight: 600;
     padding-left: .5rem;
