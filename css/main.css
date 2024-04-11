@@ -623,8 +623,48 @@ body {
        font-size: 0;
        padding-bottom: 0rem;
     }
-
 }
+
+/* --------------- PROJECT PAGE ----------------- */
+
+
+.projects-page-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-page-cards {
+    width: calc(100% - 2rem); 
+    /* max-width: 35rem; */
+    background-color: #131313;
+    border-radius: 2rem;
+    border: 1px solid #262626;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 150ms ease;
+}
+
+.project-page-cards .tags p:hover,
+.project-page-cards .tags p:focus {
+    background-color: #2e2e2e;
+    color: var(--purple);
+}
+
+.project-page-container {
+    margin-top: 12rem;
+    padding: 0 1em;
+}
+
+
+
+
+
 
 /* ------------------ ABOUT ------------------- */
 
@@ -857,6 +897,14 @@ body {
         display: none;
     }
 
+    /* Active Mobile Nav */
+    .navbar-nav .nav-link.active {
+        border: 0.9px solid rgba(255, 255, 255, 0.078);
+        background: rgba(67, 67, 67, 0.045);
+        backdrop-filter: blur(5.150000095367432px);
+        border-radius: 10px;
+    }
+
     .navbar-nav a {
         color: #FFF;
         font-family: "Helvetica Neue";
@@ -878,8 +926,8 @@ body {
         display: flex;
     }
 
-    .navbar-toggler-icon {
-        background-image: url("/images/svg/nav.svg");
+    .navbar-toggler .navbar-toggler-icon {
+        background-image: url("/images/svg/close.svg");
         width: 35px;
         height: 16px;
         padding: .8em 0; 
@@ -890,6 +938,16 @@ body {
         outline: none;
         box-shadow: none;
     }
+
+    .linkedin-mobile {
+        padding-bottom: 2rem;
+    }
+    
+
+    .collapsed > .navbar-toggler-icon {
+        background-image: url("/images/svg/nav.svg");
+    }
+
     
     .navbar-toggler {
         border: none;
@@ -905,6 +963,20 @@ body {
         padding: 1.5em .5em;
     }
     
+    .bg-body-tertiary,
+    .navbar, 
+    .navbar-expand-lg {
+        border: 0.9px solid rgba(255, 255, 255, 0.2);
+        background: rgba(41, 41, 41, 0.80) !important;
+        backdrop-filter: blur(5.150000095367432px);
+        padding: .6em;
+        margin-bottom: 1em;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
 
     /* ----------------- HOME ------------------- */
 
@@ -934,6 +1006,8 @@ body {
     .home-section h3 {
         text-shadow: 0px .5px 10px #000000;
     }
+
+   
 
  }
 
