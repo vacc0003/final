@@ -44,6 +44,10 @@ body {
     background-color: #888; 
 }
 
+.back-button {
+    display:none;
+}
+
 
 /* -------------- TYPOGRAPHY --------------- */
 
@@ -597,22 +601,6 @@ body {
     }
 }
 
-/* 
-@media screen and (max-width: 870px) and (max-height:700px) {
-    .copyright {
-       padding-bottom: 0rem;
-       padding-top: 1rem;
-    }
-}
-
-@media screen and (max-width:1000px) and (max-height: 1240px) {
-    .copyright {
-        padding-bottom: 0rem;
-        padding-top: 1rem;
-     }
-} */
-
-
 @media screen and (max-width: 470px) {
     .copyright {
         padding: 0 3rem;
@@ -785,6 +773,26 @@ body {
 .pp-tags {
     padding-top: 1rem;
 }
+
+.case-heading {
+    padding-top: 1.5rem;
+}
+
+.pp-heading em {
+    color: rgb(236, 236, 236);
+    font-weight: 500;
+}
+
+.ocelot a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+.ocelot a:hover,
+.ocelot a:focus {
+    text-decoration: underline;
+}
+
 
 /* ------------------ ABOUT ------------------- */
 
@@ -1045,7 +1053,6 @@ body {
         display: none;
     }
 
-    /* Active Mobile Nav */
     .navbar-nav .nav-link.active {
         border: 0.9px solid rgba(255, 255, 255, 0.078);
         background: rgba(67, 67, 67, 0.045);
@@ -1162,6 +1169,47 @@ body {
 
     .close-button {
         display: none;
+    }
+
+    /* ----------------- PROJECTS ------------------- */
+
+    .collage {
+        padding: 0 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #kouyou-img {
+        content: url("/images/projects/kouyou/kouyou.jpg");
+    }
+
+    .back-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .back-button img {
+        width: .7rem;
+        margin-right: .5rem;
+        margin-bottom: .1rem;
+    }
+
+    .back-button a {
+        text-decoration: none;
+        color: rgb(211, 211, 211);
+    }
+    
+    .project-page-container {
+        margin-top: 6rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .project-container {
+        padding-right: 0;
+        padding-left: 0;
     }
 
  }
