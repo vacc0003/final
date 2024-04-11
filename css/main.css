@@ -934,13 +934,6 @@ body {
     transition: all 150ms ease;
 }
 
-
-.email-carmen p:hover img,
-.email-carmen p:focus img{
-    content: url(/images/svg/email-hover.svg);
-    transition: all 150ms ease;
-}
-
 .e-tags img {
     width: .8rem;
 }
