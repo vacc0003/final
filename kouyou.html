@@ -118,9 +118,9 @@
                       
                       <p>View the process deck below, where you will find links to view the entire back-end Figma file which includes the user flow, storyboards, wireframes, low-fi prototype, and hi-fi prototype.</p>
                   </div>
-                  <div class="tags project-page-tag">
-                      <p>Process Deck</p>
-                      <p>Prototype</p>
+                  <div class="tags project-page-tag pp-tags">
+                      <a href="#" aria-label="link to process deck" class="p-tag-1"><img src="./images/svg/process.svg" alt="working progress icon"><span>Process Deck</span><img class="fade-in-arrow" id="fade-in-arrow" src="./images/svg/right.svg" alt="link arrow"></a>
+                      <a href="#" aria-label="link to prototype" class="p-tag-1"><img src="./images/svg/prototype.svg" alt="working progress icon"><span>Prototype</span><img class="fade-in-arrow" id="fade-in-arrow" src="./images/svg/right.svg" alt="link arrow"></a>
                   </div>
               </div>
           </div>
@@ -151,5 +151,16 @@
       <div class="copyright"> &copy 2024 Carmen James Caruso Vacchio • @carmen.vacchio </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+        function expandButton(button) {
+            button.classList.add('expand');
+        }
+    
+        function shrinkButton(button) {
+            button.classList.remove('expand');
+        }
+    </script>
+    
 </body>
 </html>

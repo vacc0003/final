@@ -120,27 +120,6 @@ body {
     text-decoration: none;
 }
 
-.tags a:hover,
-.tags a:focus {
-    background-color: var(--vacchio-orange);
-    transition: all 150ms ease;
-}
-
-
-.email-carmen p:hover,
-.email-carmen p:focus {
-    background-color: var(--vacchio-orange);
-    transition: all 150ms ease;
-}
-
-
-.email-carmen p:hover img,
-.email-carmen p:focus img{
-    content: url(/images/svg/email-hover.svg);
-    transition: all 150ms ease;
-}
-
-
 /* ----------------- NAV ------------------- */
 
 .desktop {
@@ -720,6 +699,70 @@ body {
     flex: 1;
 }
 
+.p-tag-1 img{
+    width: 1rem;
+    margin-bottom: .2rem;
+}
+
+.p-tag-2 img{
+    width: 1rem;
+    margin-bottom: .1rem;
+}
+
+.project-page-tag a {
+    padding-left: 1rem;
+}
+
+.project-page-tag span {
+    color: rgb(232, 232, 232);
+    font-weight: 600;
+    padding: 0 .5rem;
+}
+
+.pp-tags a {
+    padding: .3rem .5rem .3rem 1rem;
+    transition: all 150ms ease;
+}
+
+.pp-tags a:hover,
+.pp-tags a:focus {
+    background-color: var(--vacchio-purple);
+    padding-right: 1.5rem;
+}
+
+.pp-tags a.expand {
+    animation: expandButton 0.3s ease forwards;
+}
+
+@keyframes expandButton {
+    0% {
+        padding-right: 1rem;
+    }
+    100% {
+        padding-right: 2rem;
+    }
+}
+
+.fade-in-arrow {
+    margin: .38rem .5rem 0 0;
+    align-self: center;
+    transform: scale(0);
+    transition: all 200ms ease;
+    position: absolute;
+    opacity: 0;
+}
+
+.pp-tags a:hover .fade-in-arrow,
+.pp-tags a:focus .fade-in-arrow {
+    transition: all 300ms ease;
+    transform: scale(1);
+    opacity: 1;
+}
+
+#fade-in-arrow {
+    width: .8rem;
+    margin-top: .5rem;
+}
 
 /* ------------------ ABOUT ------------------- */
 
@@ -790,26 +833,65 @@ body {
     padding-bottom: .1rem;
 }
 
+
 .a-tags span {
     padding-left: .5rem;
+}
+
+#ac-tags img {
+    width: .6rem;
+}
+
+#ac-tags {
+    margin-left: .2rem;
+}
+
+#ac-tags a {
+    align-items: center;
+    display: inline-flex;
+}
+
+#ac-tags a:hover,
+#ac-tags a:focus {
+    background-color: var(--vacchio-orange);
+    transition: all 150ms ease;
 }
 
 .e-tags span {
     padding-right: .5rem;
     color: rgb(232, 232, 232);
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.email-carmen p {
+    cursor: pointer;
+}
+
+.email-carmen img {
+    margin-left: .2rem;
 }
 
 .email-carmen span {
-    padding-right: .5rem;
+    padding-right: .3rem;
     color: rgb(232, 232, 232);
-    font-weight: 500;
+    font-weight:600;
+}
+
+.email-carmen p:hover,
+.email-carmen p:focus {
+    background-color: var(--vacchio-orange);
+    transition: all 150ms ease;
+}
+
+
+.email-carmen p:hover img,
+.email-carmen p:focus img{
+    content: url(/images/svg/email-hover.svg);
+    transition: all 150ms ease;
 }
 
 .e-tags img {
     width: .8rem;
-    height: .8rem;
-    padding-bottom: .1rem;
 }
 
 .card-divider {
@@ -960,17 +1042,17 @@ body {
     .navbar-nav a {
         color: #FFF;
         font-family: "Helvetica Neue";
-        font-size: 25px;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        padding: 1rem .5rem;
     }
 
     .navbar-nav a img {
-        width: 18.585px;
-        height: 20.383px;
+        width: 1rem;
         flex-shrink: 0;
-        margin: 0 .4em;
+        margin: 0 1rem 0 .4em;
     }
 
     .nav-link {
@@ -985,14 +1067,12 @@ body {
         padding: .8em 0; 
     }
     
-    .navbar-toggler:focus,
-    .navbar-toggler:active {
-        outline: none;
-        box-shadow: none;
+    .linkedin-mobile {
+        margin-bottom: 1rem;
     }
 
-    .linkedin-mobile {
-        padding-bottom: 1.5rem;
+    .m-home {
+        margin-top: 1rem;
     }
     
 
@@ -1012,21 +1092,16 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        padding: 1.5em .5em;
+        padding: .8em .5em;
     }
     
     .bg-body-tertiary,
     .navbar, 
     .navbar-expand-lg {
-        border: 1px solid #262626;
         background-color: #131313 !important;
         backdrop-filter: blur(5.150000095367432px);
         padding: .6em;
         margin-bottom: 1em;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
     }
 
     /* ----------------- HOME ------------------- */
