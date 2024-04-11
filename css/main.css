@@ -600,7 +600,7 @@ body {
     padding: 1.5rem;
 }
 
-.p-img img {
+.p-img .carm-img {
     max-width: 100%;
     height: auto;
     display: block;
