@@ -503,19 +503,19 @@ body {
     padding: 1.5em;
 }
 
-.home-section h2 span:first-child {
+.home-section h1 span:first-child {
     color: transparent;
     background: var(--vacchio-green);
     background-clip: text;
 }
 
-.home-section h2 span:last-child {
+.home-section h1 span:last-child {
     background: var(--vacchio-purple);
     border-radius: 5px;
     padding: 0 .5rem .2rem .5rem;
 }
 
-.home-section h2 {
+.home-section h1 {
     color: #FFF;
     font-size: 2rem;
     font-style: normal;
@@ -523,7 +523,7 @@ body {
     line-height: normal;
 }
 
-.home-section h3 {
+.home-section h2 {
     color: #D7D7D7;
     font-size: 1.6em;
     font-style: normal;
@@ -822,7 +822,7 @@ body {
 
      /* ----------------- HOME ------------------- */
 
-    .home-section h2 {
+    .home-section h1 {
         color: #FFF;
         font-size: 4rem;
         font-style: normal;
@@ -830,7 +830,7 @@ body {
         line-height: normal;
     }
     
-    .home-section h3 {
+    .home-section h2 {
         padding-top: .3em;
         color: #D7D7D7;
         font-size: 3rem;
@@ -840,7 +840,7 @@ body {
         max-width: 900px
     }
 
-    .home-section h2 span:last-child {
+    .home-section h1 span:last-child {
         border-radius: 10px;
         padding: 0 1rem .2rem 1rem;
     }
@@ -848,7 +848,7 @@ body {
 
 @media screen and (min-width: 641px) and (max-width: 1750px) {
 
-    .home-section h2 {
+    .home-section h1 {
         color: #FFF;
         font-size: 4rem;
         font-style: normal;
@@ -856,7 +856,7 @@ body {
         line-height: normal;
     }
     
-    .home-section h3 {
+    .home-section h2 {
         color: #D7D7D7;
         font-size: 3rem;
         font-style: normal;
@@ -864,7 +864,7 @@ body {
         line-height: normal;
     }
 
-    .home-section h2 span:last-child {
+    .home-section h1 span:last-child {
         border-radius: 10px;
         padding: 0 1rem .2rem 1rem;
     }
@@ -995,18 +995,17 @@ body {
     .home-hero {
         padding: 1em;
         position: absolute;
-        top: 10%;
+        top: 20%;
         margin-top: 0;
     }
 
-    .home-section h2 {
+    .home-section h1 {
         padding: .4em 0;
     }
 
-    .home-section h3 {
+    .home-section h2 {
         text-shadow: 0px .5px 10px #000000;
     }
-
    
 
  }
@@ -1016,7 +1015,7 @@ body {
     .home-hero {
         padding: 1em;
         position: absolute;
-        top: 15%;
+        top: 25%;
         margin-top: 0;
     }
 
@@ -1031,31 +1030,31 @@ body {
         margin-top: 0;
     }
 
-    .home-hero h3 {
+    .home-hero h2 {
         font-size: 2.5em;
     }
 
-    .home-hero h2 {
+    .home-hero h1 {
         font-size: 4em;
     }
  }
 
  @media screen and (max-height: 900px) {
-    .home-hero h2 {
+    .home-hero h1 {
         font-size: 3rem;
     }
 
-    .home-hero h3 {
+    .home-hero h2 {
         font-size: 2rem;
     }
  } 
 
  @media screen and (max-width: 500px) {
-    .home-hero h2 {
+    .home-hero h1 {
         font-size: 3rem;
     }
 
-    .home-hero h3 {
+    .home-hero h2 {
         font-size: 2rem;
     }
  } 
