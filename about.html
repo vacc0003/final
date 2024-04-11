@@ -105,8 +105,7 @@
             <li><a href="./projects.html" aria-label="Button to skip to projects">Skip to projects</a></li>
             <li><a href="./about.html" aria-label="Button to skip to about/contact page">Skip to about/contact page</a>
             </li>
-            <li><a href="https://www.linkedin.com/in/carmenvac/" target="_blank"
-                    aria-lable="Button to skip to LinkedIn">Skip to LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/carmenvac/" target="_blank">Skip to LinkedIn</a></li>
         </ul>
 
       <section class="about-section">
@@ -115,7 +114,7 @@
           <div class="about-left">
 
               <!-- Card #1 -->
-              <div class="about-cards left-cards">
+              <section class="about-cards left-cards">
                   <div class="about-card">
                         <div class="p-img">
 
@@ -142,24 +141,24 @@
                             </picture>
 
                         </div>
-                      <div class="p-heading a-heading">
-                          <h1>Hey, I'm Carmen</h1>
-                          <p>UX Designer • Entrepreneur • Tech Enthusiast</p>
+                      <div class="p-heading a-heading" itemscope itemtype="https://schema.org/Person">
+                          <h1 itemprop="name">Hey, I'm Carmen</h1>
+                          <p itemprop="JobTitle">UX Designer • Entrepreneur • Tech Enthusiast</p>
                       </div>
                       <div class="tags a-tags">
                           <p><img src="./images/svg/location.svg" alt="location icon"><span>Ottawa, Ontario</span></p>
                           <p><img src="./images/svg/school.svg" alt="school icon"><span>Algonquin College</span></p>
                       </div>
                   </div>
-              </div>
+              </section>
 
           </div>
 
           <!-- Right Side -->
-          <div class="about-right">
+          <section class="about-right">
 
               <!-- Card #1 -->
-              <div class="about-cards">
+              <article role="article" class="about-cards">
                   <div class="about-card">
                       <div class="p-heading a-heading">
                           <h1>About Me</h1>
@@ -176,24 +175,24 @@
                           <p><img src="./images/svg/email.svg" alt="email icon"><span>carmen@zolas.ca</span></p>
                       </div>
                   </div>
-              </div>
+              </article>
 
               <!-- Card #2 -->
-              <div class="about-cards">
+              <section role="contentinfo" class="about-cards">
                   <div class="about-card">
-                      <div class="p-heading a-heading education">
-                          <h1>Education</h1>
-                          <h2>Algonquin College</h2>
-                          <h3>Interactive Media Design (co-op)<span>2023 to 2025</span></h3>
+                      <div class="p-heading a-heading education" role="article" itemscope itemtype="https://schema.org/Organization">
+                          <h1 role="heading">Education</h1>
+                          <h2 itemprop="brand">Algonquin College</h2>
+                          <h3 itemprop="description">Interactive Media Design (co-op)<span>2023 to 2025</span></h3>
                       </div>
                       <div class="card-divider"></div>
-                      <div class="p-heading a-heading education">
-                          <h2>Algonquin College</h2>
-                          <h3>Mobile and Web User Experience Design<span>2022 to 2023</span></h3>
+                      <div class="p-heading a-heading education" itemscope itemtype="https://schema.org/Organization">
+                          <h2 itemprop="brand">Algonquin College</h2>
+                          <h3 itemprop="description">Mobile and Web User Experience Design<span>2022 to 2023</span></h3>
                           <div class="card-divider"></div>
                           <div class="p-heading a-heading education">
-                              <h2>Algonquin College</h2>
-                              <h3>Business Management & Entrepreneurship<span>2014 to 2016</span></h3>
+                              <h2 itemprop="brand">Algonquin College</h2>
+                              <h3 itemprop="description">Business Management & Entrepreneurship<span>2014 to 2016</span></h3>
                           </div>
                           <div class="tags e-tags" id="ac-tags">
                               <a href="https://www.algonquincollege.com/" target="_blank"><span>algonquincollege.com</span><img
@@ -201,7 +200,7 @@
                           </div>
                       </div>
                   </div>
-              </div>
+              </section>
 
               <!-- Card #3 -->
               <div class="about-cards">
@@ -239,7 +238,7 @@
                   </div>
               </div>
 
-          </div>
+          </section>
 
       </section>
   </main>
@@ -247,7 +246,7 @@
         
       
       <!-- Copyright -->
-      <div class="copyright" id="about-footer"> &copy 2024 Carmen James Caruso Vacchio • @carmen.vacchio</div>
+      <div class="copyright" id="about-footer" role="contentinfo" itemscope itemtype="https://schema.org/Organization"> <span itemprop="copyrightHolder">&copy; 2024 Carmen James Caruso Vacchio • @carmen.vacchio</span></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
