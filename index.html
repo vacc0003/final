@@ -99,9 +99,28 @@
             </div>
         </section>
 
-        <div class="shape">
-            <img src="./images/home-shape/home-shape.png" alt="large 3d shape">
-        </div>
+
+        <picture>
+
+          <source srcset="images/raster/about-us/about-us-320_x_240.jpg,
+          images/raster/about-us/about-us-640_x_480.jpg 2x,
+          images/raster/about-us/about-us-960_x_720.jpg 3x" media="(max-width: 320px)" />
+
+          <source srcset="images/raster/about-us/about-us-480_x_360.jpg,
+          images/raster/about-us/about-us-960_x_720.jpg 2x,
+          images/raster/about-us/about-us-1440_x_1080.jpg 3x" media="(max-width: 480px)" />
+
+          <source srcset="images/raster/about-us/about-us-720_x_540.jpg,
+          images/raster/about-us/about-us-1440_x_1080.jpg 2x,
+          images/raster/about-us/about-us-2160_x_1620.jpg 3x" media="(max-width: 720px)" />
+
+          <source srcset="images/raster/about-us/about-us-960_x_720.jpg,
+          images/raster/about-us/about-us-1920_x_1440.jpg 2x,
+          images/raster/about-us/about-us-2880_x_2160.jpg 3x" media="(max-width: 960px)" />
+
+          <img class="shape" aria-label="Large 3d colorful shape in background" src="./images/home-shape/home-shape.png" alt="large 3d shape">
+
+      </picture>
 
     </main>
         
