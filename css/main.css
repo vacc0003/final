@@ -266,7 +266,8 @@ body {
     transition: opacity 150ms ease;
 }
 
-.nav-doc-button[data-tool-tip]:hover::before {
+.nav-doc-button[data-tool-tip]:hover::before,
+.nav-doc-button[data-tool-tip]:focus::before {
     opacity: 1;
 }
 
@@ -742,6 +743,7 @@ body {
     animation: expandButton 0.3s ease forwards;
 }
 
+
 @keyframes expandButton {
     0% {
         padding-right: 1rem;
@@ -825,6 +827,32 @@ body {
 
 /* ------------------ ABOUT ------------------- */
 
+.ac-tag-arrow a:hover #fade-in-arrow,
+.ac-tag-arrow a:focus #fade-in-arrow {
+    transition: all 300ms ease;
+    transform: scale(1);
+    opacity: 1;
+    width: .5rem;
+    margin-left: .1rem;
+    padding-top: .055rem;
+}
+
+.ac-tag-arrow a {
+    padding: .3rem .5rem .3rem 1rem;
+    transition: all 150ms ease;
+    margin-top: 1.2rem;
+}
+
+.ac-tag-arrow a.expand {
+    animation: expandButton 0.3s ease forwards;
+}
+
+.ac-tag-arrow a:hover,
+.ac-tag-arrow a:focus {
+    background-color: var(--vacchio-orange);
+    padding-right: 1.2rem;
+}
+
 .about-container {
     margin-top: 2rem;
     padding: 0 1em;
@@ -853,7 +881,6 @@ body {
 .left-cards {
     position: sticky;
     top: 2rem;
-    /* overflow-y: none; */
 }
 
 .about-cards {
@@ -889,23 +916,8 @@ body {
     padding-left: .5rem;
 }
 
-#ac-tags img {
-    width: .6rem;
-}
-
-#ac-tags {
-    margin-left: .2rem;
-}
-
-#ac-tags a {
-    align-items: center;
-    display: inline-flex;
-}
-
-#ac-tags a:hover,
-#ac-tags a:focus {
-    background-color: var(--vacchio-orange);
-    transition: all 150ms ease;
+#ac-tag a {
+    padding-left: .35rem;
 }
 
 .e-tags span {
@@ -931,6 +943,12 @@ body {
 .email-carmen p:hover,
 .email-carmen p:focus {
     background-color: var(--vacchio-orange);
+    transition: all 150ms ease;
+}
+
+.email-carmen p:hover img,
+.email-carmen p:focus img {
+    content: url("../images/svg/envelope.fill.svg");
     transition: all 150ms ease;
 }
 
