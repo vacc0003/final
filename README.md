@@ -28,9 +28,7 @@ To use this project, follow these steps:
     Will be answered in less than 24 hours (Every day)
 
 - **Images:**
-  - Image 1: [Source](https://unsplash.com/photos/man-in-blue-dress-shirt-sitting-on-rolling-chair-inside-room-with-monitors-wawEfYdpkag)
-  - Image 2: [Source](https://dribbble.com/shots/21108587-Seasons-of-mindfulness-Summer)
-  - Image 3: [Source](https://dribbble.com/shots/22836502-Oakwood-Girl-Studying)
+  - Image 1: [Source](https://unsplash.com/photos/a-close-up-of-a-flower-on-a-black-background-d5T7QDYk8jc)
 
 - **Notes:**
   - Attn. smart and pretty professor Anoop, you will see that I made changes from the original design seen in the Figma file. This was done as a response to how things ended up looking on the actual website. I feel that the updates made were massive improvements to the general design, look and feel of the website.
