@@ -851,6 +851,7 @@ body {
 .ac-tag-arrow a:focus {
     background-color: var(--vacchio-orange);
     padding-right: 1.2rem;
+    border: 1px solid #f57433;
 }
 
 .about-container {
@@ -944,6 +945,7 @@ body {
 .email-carmen p:focus {
     background-color: var(--vacchio-orange);
     transition: all 150ms ease;
+    border: 1px solid #f57433;
 }
 
 .email-carmen p:hover img,
