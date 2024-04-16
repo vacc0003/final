@@ -1318,3 +1318,9 @@ body {
         font-size: 2rem;
     }
  } 
+
+ @media screen and (max-width: 720px) and (min-width: 640px) {
+    .shape {
+        right: -400px;
+    }
+ }
