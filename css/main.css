@@ -610,15 +610,6 @@ body {
     border-radius: 10px;
 } 
 
-
-.p-img .carm-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-} 
-
 .copyright {
     padding: 2rem 1rem 5rem 1rem;
     color: #8F8F8F;
