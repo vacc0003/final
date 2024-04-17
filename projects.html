@@ -118,8 +118,31 @@
       <!-- Card #1 -->
       <a href="./kouyou.html" class="project-cards" aria-label="link to mobile ordering app project">
         <div class="project-card">
-          <div class="p-img"><img src="./images/projects/kouyou/kouyou-thumbnail.jpg"
-              alt="japanese restaurant ordering app"></div>
+          <div class="p-img">
+
+            <picture>
+
+              <source srcset="./images/projects/kouyou/thumbnail/kouyou-thumbnail(320).webp,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(640).webp 2x,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(960).webp 3x" media="(max-width: 320px)" />
+    
+              <source srcset="./images/projects/kouyou/thumbnail/kouyou-thumbnail(440).webp,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(960).webp 2x,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(1440).webp 3x" media="(max-width: 480px)" />
+    
+              <source srcset="./images/projects/kouyou/thumbnail/kouyou-thumbnail(720).webp,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(1440).webp 2x,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(2160).webp 3x" media="(max-width: 720px)" />
+    
+              <source srcset="./images/projects/kouyou/thumbnail/kouyou-thumbnail(960).webp,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(1920).webp 2x,
+              ./images/projects/kouyou/thumbnail/kouyou-thumbnail(2880).webp 3x" media="(max-width: 960px)" />
+    
+              <img src="./images/projects/kouyou/thumbnail/kouyou-thumbnail.webp" alt="Japanese restaurant ordering app">
+    
+            </picture> 
+
+          </div>
           <div class="p-heading">
             <h1>Mobile Ordering Application</h1>
             <p>This project was completed further to the Google UX Design Certificate provided through Coursera.</p>
