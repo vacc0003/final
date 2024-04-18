@@ -1213,10 +1213,6 @@ body {
         flex-direction: column;
     }
 
-    #kouyou-img {
-        content: url("../images/projects/kouyou/kouyou.jpg");
-    }
-
     .back-button {
         display: inline-flex;
         align-items: center;
