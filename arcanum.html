@@ -130,8 +130,31 @@
           <!-- Card #1 -->
           <div class="project-page-cards">
               <div class="project-card">
-                  <div class="p-img"><img src="./images/projects/arcanum/arcanum.jpeg"
-                          alt="arcanum item marketplace website mockup"></div>
+                    <div class="p-img">
+                    
+                        <picture>
+
+                            <source srcset="./images/projects/ops/hero/ops-320_x_217.webp,
+                            ./images/projects/ops/hero/ops-640_x_435.webp 2x,
+                            ./images/projects/ops/hero/ops-960_x_653.webp 3x" media="(max-width: 320px)" />
+                
+                            <source srcset="./images/projects/ops/hero/ops-480_x_326.webp,
+                            ./images/projects/ops/hero/ops-960_x_653.webp 2x,
+                            ./images/projects/ops/hero/ops-1440_x_979.webp 3x" media="(max-width: 480px)" />
+                
+                            <source srcset="./images/projects/ops/hero/ops-720_x_489.webp,
+                            ./images/projects/ops/hero/ops-1440_x_979.webp 2x,
+                            ./images/projects/ops/hero/ops-2160_x_1469.webp 3x" media="(max-width: 720px)" />
+                
+                            <source srcset="./images/projects/ops/hero/ops-960_x_653.webp,
+                            ./images/projects/ops/hero/ops-1920_x_1306.webp 2x,
+                            ./images/projects/ops/hero/ops-2880_x_1959.webp 3x" media="(max-width: 960px)" />
+            
+                            <img src="./images/projects/ops/hero/ops.webp" alt="item marketplace mockup" onerror="this.onerror=null; this.src='./images/projects/ops/hero/ops.jpg';">
+                
+                        </picture>
+                        
+                    </div>
                   <div class="p-heading pp-heading case-heading" role="contentinfo">
                       <h1 class="project-h1">Web Application Mockup</h1>
                       <p class="ocelot" itemscope itemtype="https://schema.org/Organization">Guild Saga is a classic, 2D, isometric fantasy RPG. This project was done through my work with <a href="https://ocelot.ltd/" target="_blank" aria-label="link to Ocelot Technologies website" itemprop="brand">Ocelot Technologies ltd.</a> The task was to design a web application for their upcoming item marketplace.</p> 
