@@ -4,7 +4,6 @@
 
 html {
     box-sizing: border-box;
-    font-family: "Helvetica Neue";
     background-color: #0D0D0D;
 }
 
@@ -232,7 +231,6 @@ body {
     cursor: pointer;
     transition: all 100ms ease-in;
 }
-
 
 .active-home-tool {
     position: relative;
