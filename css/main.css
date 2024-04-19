@@ -12,7 +12,7 @@ body {
     display: block;
     overflow-x: hidden;
     background-color: #0D0D0D;
-    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif, inter;
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, inter, Roboto, Helvetica Neue, sans-serif;
 }
 
 .home-body {
