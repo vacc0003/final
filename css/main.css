@@ -9,9 +9,10 @@ html {
 
 body {
     line-height: 1.5em;
-    display:block;
+    display: block;
     overflow-x: hidden;
     background-color: #0D0D0D;
+    font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif, inter;
 }
 
 .home-body {
@@ -1094,7 +1095,6 @@ body {
 
     .navbar-nav a {
         color: #FFF;
-        font-family: "Helvetica Neue";
         font-size: 1.2rem;
         font-style: normal;
         font-weight: 500;
@@ -1140,7 +1140,6 @@ body {
     
     .nav-title {
         color: #FFF;
-        font-family: "Helvetica Neue";
         font-size: 21.024px;
         font-style: normal;
         font-weight: 700;

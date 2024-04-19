@@ -71,24 +71,4 @@ body {
     line-height: 1.25rem;
     text-transform: initial;
     letter-spacing: initial;
-    /* font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif; */
-    color: var(--p-text, #212b36)
-}
-
-/* Windows font */
-@media screen and (min-resolution: 0.001dpcm) {
-    @supports (-webkit-appearance:none) {
-        body {
-            font-family: Helvetica Neue, Segoe UI, Roboto, sans-serif;
-        }
-    }
-}
-
-/* macOS font */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @media {
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, San Francisco, Helvetica, sans-serif;
-        }
-    }
 }
