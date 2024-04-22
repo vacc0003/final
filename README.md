@@ -30,9 +30,6 @@ To use this project, follow these steps:
 - **Images:**
   - Image 1: [Source](https://unsplash.com/photos/a-close-up-of-a-flower-on-a-black-background-d5T7QDYk8jc)
 
-- **Notes:**
-  - Attn. smart and pretty professor Anoop, you will see that I made changes from the original design seen in the Figma file. This was done as a response to how things ended up looking on the actual website. I feel that the updates made were massive improvements to the general design, look and feel of the website.
-
 ## Contributing
 1. Fork the repository.
 2. Create a new branch (`git checkout -b feature/fooBar`).
